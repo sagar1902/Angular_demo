@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Shadows+Into+Light'); */
+
+
+
+.btn.btn-primary.btn-rounded {
+	background-color: #9FCFD4;
+	border-color: #9FCFD4;
+	color: black;
+	width: 100%;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+html .btn-primary:active, html .btn-primary.active, .show > html .btn-primary.dropdown-toggle {
+	background-color: #9FCFD4 !important;
+	background-image: none !important;
+	border-color: #9FCFD4 #9FCFD4 #9FCFD4 !important;
+}
+
+.forgot-pass
+{
+	color: #005484;
+
+}
+.forgot-pass:hover
+{
+	color: #005484;
+
+}
+.form-check-input:checked {
+	background-color: #9FCFD4;
+	border-color: #9FCFD4;
+}
+.checked {
+	width: 10px;
+	height: 10px;
+	border-color: 1px solid black;
+	border: 1px solid black;
+}
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+	color: var(--bs-btn-active-color);
+	background-color: #c8dbef !important;
+	border-color: #000;
+
+}
+.btn.btn-outline-dark:active {
+	background-color: #c8dbef !important;
+	border-color: #c8dbef !important;
+}
+.btn.btn-outline-dark.boox {
+	padding: 6px 6px;
+	border-radius: 0px;
+}
+.roboto_font{
+	font-family: 'Roboto', sans-serif;
+}
+.body-sign{
+	height: auto !important;
+}
+.login_container{
+	background-color: #fff;
+	border-radius: 1rem;
+}
+
+@media (min-width: 1200px) {
+	.form-check-label {
+	font-size: 13px;
+}
+}
+@media (max-device-width: 480px) {
+	   label.form-check-label {
+    font-size: 10px;
+    }
+}
+@media (max-device-width: 375px) {
+	label.form-check-label {
+  font-size: 8px;
+ }
+}
+@media (max-device-width: 360px) {
+	   label.form-check-label {
+    font-size: 8px;
+    }
+}
+@media (min-width: 1200px) {
+	.form-check-label {
+	font-size: 13px;
+}
+}
+@media (min-width: 1200px) {
+	.a.forgot-pass {
+	font-size: 13px;
+}
+}
+@media (max-device-width: 480px) {
+	   a.forgot-pass {
+    font-size: 10px;
+}
+}
+@media (max-device-width: 360px) {
+	   a.forgot-pass {
+    font-size: 8px;
+}
+}

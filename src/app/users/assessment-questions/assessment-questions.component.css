@@ -1,0 +1,140 @@
+.page {
+  /* width: 100vh; */
+  height: 100vh;
+  background-color: white !important;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4f4f6;
+  border-radius: 15px;
+  max-width: 60%;
+  box-shadow: 0px 20px 25px rgba(28, 28, 34, 0.15);
+}
+
+.btn.btn-primar.btn-rounded {
+  background-color: #9fcfd4;
+  border-color: #9fcfd4;
+  color: black;
+  border-radius: 14px;
+  width: 300px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.btn-round {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  /* font-family: Roboto; */
+  font-weight: 500;
+  line-height: 16px;
+  word-wrap: break-word;
+  background-color: #9fcfd4;
+  border-color: #9fcfd4;
+  color: black;
+  border-radius: 1400px;
+  padding: 8px;
+  /* width: 300px; */
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.btn-text {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  /* font-family: Roboto; */
+  font-weight: 500;
+  /* line-height: 16px; */
+  word-wrap: break-word;
+}
+
+.btn-secondar {
+  background-color: transparent;
+  /* width: 95px; */
+  /* height: 15.94px; */
+  color: black;
+  font-size: 20px;
+  /* font-family: Roboto; */
+  font-weight: 500;
+  line-height: 16px;
+  word-wrap: break-word;
+  border: none;
+}
+
+.question-text {
+  width: 556px;
+  height: 55px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  /* font-family: Roboto; */
+  font-weight: 600;
+  line-height: 25.5px;
+  word-wrap: break-word;
+}
+
+.pre-text {
+  /* width: 101px;
+  height: 37.87px; */
+  color: black;
+  font-size: 16px;
+  /* font-family: Roboto; */
+  font-weight: 400;
+  line-height: 37.5px;
+  word-wrap: break-word;
+  padding-left: 34px;
+}
+
+.response-container {
+  padding-left: 34px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.square-button {
+  width: 48px;
+  height: 48px;
+  /* background-color: gray; */
+  background: rgba(45, 53, 60, 0.1);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 24px; */
+}
+.number {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  /* background-color: white; */
+  color: black;
+  text-align: center;
+  line-height: 27px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-selected {
+  background: rgba(45, 53, 60, 0.3);
+}
+
+.main-btn {
+  width: 304px;
+  height: 47px;
+  background: #9fcfd4;
+  border-radius: 14px;
+}

@@ -1,0 +1,28 @@
+<div class="page">
+  <div class="component-container">
+    <div class="question-container p-4 mt-5 mb-5">
+      <div><strong>{{currentQuestion+1}}</strong>/{{questions.length}}</div>
+      <p class="question-text p-4 pt-2">{{questions[currentQuestion]}}</p>
+      <div class="pre-text">Level Today</div>
+      <div class="response-container">
+        <!-- <button *ngFor="let score of scoreArr" class="response-btn">{{score}}</button> -->
+        <button *ngFor="let score of scoreArr" class="square-button" [class.btn-selected]="score==activeResponse.today" >
+          <span class="number" (click)="setResponse('today', score)">{{score}}</span>
+        </button>
+      </div>
+      <div class="pre-text">Desired</div>
+      <div class="response-container">
+        <!-- <button *ngFor="let score of scoreArr" class="response-btn">{{score}}</button> -->
+        <button *ngFor="let score of scoreArr" class="square-button" [class.btn-selected]="score==activeResponse.desired">
+          <span class="number" (click)="setResponse('desired', score)">{{score}}</span>
+        </button>
+      </div>
+      <div class="mt-4 d-flex justify-content-end">
+        <button class="btn btn-secondar btn-text" (click)="previousQuestion()" [disabled]="currentQuestion<=0">Previous</button>
+        <button class="btn btn-primar btn-round btn-text" (click)="nextQuestion()" [disabled]="currentQuestion >= questions.length-1 || !activeResponse.today || !activeResponse.desired">Next</button>
+      </div>
+    </div>
+    <button class="btn btn-primar btn-rounded shadow btn-text" (click)="print(activeResponse)">View Results</button>
+    <button class="btn btn-primar btn-rounded shadow btn-text" (click)="handleLogout()">Logout</button>
+  </div>
+</div>

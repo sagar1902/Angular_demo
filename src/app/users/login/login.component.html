@@ -1,0 +1,57 @@
+<div class="container d-flex align-items-center justify-content-center" style="height: 90vh;">
+  <section class="body-sign ">
+    <div class="shadow-lg bg-white card p-5 mt-5 login_container" style="background: white !important; width: 450px;">
+      <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+        <a href="#"> <img src="./../../../assets/logo.png" height="80" alt="Porto Admin" class="text-center" /></a>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+        <h4 class="mt-4 text-center roboto_font" style="font-weight: 500;"> Sign in to your account</h4>
+      </div>
+
+      <div #responsePopup class="text-center roboto_font mb-4"></div>
+      <!-- <form [formGroup]="loginForm" novalidate (ngSubmit)="loginUser()" method="post"> -->
+      <form #loginForm='ngForm' (ngSubmit)="onSubmit(loginForm)">
+
+        <div class="form-outline mb-3 form-group">
+          <input name="email" type="text" id="form1Example1" class="form-control text-center lead-font-size roboto_font"
+            placeholder="Username" onfocus="this.placeholder=''" onblur="this.placeholder='Username'" ngModel
+            #email="ngModel" required minlength="5" />
+          <small style="color: red;" class="form-text roboto_font" *ngIf="email.touched && email.errors">
+            check your email
+          </small>
+        </div>
+
+        <div class="form-outline mb-3 form-group">
+          <input name="password" type="password" id="form1Example2"
+            class="form-control text-center lead-font-size roboto_font" placeholder="Password"
+            onfocus="this.placeholder=''" onblur="this.placeholder='Password'" ngModel #password="ngModel" required />
+          <small style="color: red;" class="form-text roboto_font" *ngIf="password.touched && password.errors">
+            check your password
+          </small>
+        </div>
+        <!-- <p style="color: red;" class="roboto_font" *ngIf="submitted && loginFormControl.password.errors">
+              Enter a valid password
+            </p> -->
+
+        <div class="row mb-4">
+          <div class="col d-flex justify-content">
+            <div class="form-group">
+
+              <input type="checkbox" class="form-check-input" id="btn-check-outlined" autocomplete="off"
+                name="rememberme" ngModel #rememberme="ngModel">
+              <!-- <label class="btn btn-outline-dark boox" for="btn-check-outlined"></label> -->
+              <label class="form-check-label" for="rememberme" style="margin-left: 5px;"> Keep me signed in </label>
+
+            </div>
+          </div>
+
+          <div class="col text-end">
+            <a href="#!" class="forgot-pass"><small>Forgot password?</small></a>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-rounded shadow" [disabled]="loginForm.invalid || submitting">Login</button>
+      </form>
+
+    </div>
+  </section>
+</div>
