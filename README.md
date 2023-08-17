@@ -1,3 +1,10 @@
+# Usage
+
+1. clone repo
+2. npm install
+3. npm start
+4. login with any valid value
+
 # Demo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
